@@ -6,7 +6,6 @@ function Home() {
   return (
     <div className='home'>
       <div className='tittle'>
-          {/* <h1>Digimon</h1> */}
           <img className='img-fluid rounded mx-auto d-block' src={process.env.PUBLIC_URL + "/digimon-logo.png"} alt='Digimon-Logo'/>
       </div>
       <Container className='contents'>

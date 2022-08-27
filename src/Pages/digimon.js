@@ -16,7 +16,8 @@ function Digimons() {
   const existStatus = (param) =>{
     if (param === '') {
       setDigimonExist(true)
-      setDigimonName('')
+      toggleStatus('All')
+      setDigimonLevel('All')
     }
     else{
       setDigimonExist(false)
