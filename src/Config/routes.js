@@ -1,6 +1,8 @@
-import Home from "../Pages/home";
-import Opening from "../Pages/Opening";
-import Digimons from "../Pages/digimon";
+import React from 'react';
+
+const Home = React.lazy(() => import("../Pages/home"));
+const Opening = React.lazy(() => import("../Pages/Opening"));
+const Digimons = React.lazy(() => import("../Pages/digimon"));
 
 const routes = [
   {

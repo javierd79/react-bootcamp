@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Card, CardBody, CardSubtitle, Container, Row, Col, Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Form, FormGroup, Input, Button } from 'reactstrap';
+import { Card, CardBody, Spinner, CardSubtitle, Container, Row, Col, Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Form, FormGroup, Input, Button } from 'reactstrap';
 import axios from 'axios';
 import '../Assets/index.scss';
 
@@ -10,6 +10,7 @@ function Digimons() {
   const [digimonExist, setDigimonExist] = useState(true)
   const [digimonStatus, setDigimonStatus] = useState(true)
   const [dropdownOpen, setDropdownOpen] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
 
   const toggle = () => setDropdownOpen(!dropdownOpen)
 
@@ -47,6 +48,7 @@ function Digimons() {
           'https://digimon-api.vercel.app/api/digimon'
         )
         setDigimon(response.data)
+        setIsLoading(false)
       } catch (error) {
         console.error(error);
       }
@@ -82,6 +84,7 @@ function Digimons() {
       </div>
       <Row className='Row'>
       {
+        isLoading ? ( <Spinner color="primary" style={{position: 'absolute', top: '50%', left:'50%'}}/> ) : (
         digimonStatus === true ? (
         digimon.map((digimon)=> (
             <Col className="col">
@@ -110,7 +113,7 @@ function Digimons() {
               </Card>
             </Col>
           ))
-        )
+        ))
       }
       {
         digimonExist === true ? (
