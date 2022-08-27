@@ -1,0 +1,9 @@
+@use 'home';
+@use 'navBar';
+@use 'digimon';
+@use 'opening';
+
+body{
+    background-image: url("../digiBackground.png");
+    background-color: #bcf;
+}

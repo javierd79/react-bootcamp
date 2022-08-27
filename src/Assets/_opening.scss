@@ -1,0 +1,36 @@
+.opening{
+    overflow-x: hidden;
+
+    .tittleOpening{
+        margin: 20px 32%;
+        font-family: Pixel Digivolve,monospace,sans-serif;
+        width: 100%;
+        background: linear-gradient(rgb(252, 240, 75),red);
+        background-clip: text;
+        color: transparent;
+        -webkit-text-stroke: 2px #000;
+    }
+
+    .contOpening{
+        background-color: #059;
+        border: #d82 solid 3px;
+        margin-bottom: 150px;
+        height: 600px;
+
+        .openingCol{
+            background-color: #059;
+            border: #d82 solid 3px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 4px 4px #024;
+            margin: 20px auto;
+            width: 90%;
+            height: 90%;
+            max-width: 100%;
+
+            iframe{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

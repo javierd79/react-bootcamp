@@ -1,0 +1,155 @@
+.home{
+    overflow-x: hidden;
+
+    .tittle{
+        img{
+            width: 20%;
+            margin: 20px;
+        }
+    }
+    
+    .contents{
+        background-color: #059;
+        border: #d82 solid 3px;
+        
+        p{
+            margin: 20px;
+            font-family: sans-serif;
+            background: #fff;
+            background-clip: text;
+            color: transparent;
+            -webkit-text-stroke: 0.2px #000;
+            font-size: 23px;
+            text-align: justify;
+        }
+        
+        .digiCol{
+            border-radius: 5px;
+            box-shadow: 4px 4px 4px 4px #024;
+            margin: 6px;
+            margin-bottom: 20px;
+            max-width: 100%;
+            border: #d82 solid 3px;
+
+            .digiBtn{
+                position: absolute;
+                background:#d82;
+                display:inline;
+                color: #111;
+                margin-left: 35%;
+                margin-top: 15px;
+                border: #000 solid 1px;
+                border-radius: 5px;
+                text-align: right;
+                padding: 14px 16px;
+                text-decoration: none
+            }
+
+            .digiBtn:hover{
+                background:#a50;
+            }
+
+            h2{
+                padding: 20px 20px 0px 20px;
+                color: #fff; 
+                display: inline-block;
+                -webkit-text-stroke: 0.8px #000;
+            }
+            hr{
+                border: #d82 solid 2px;
+                box-shadow: 0 4px 2px 0px #000;
+            }
+
+            p{
+                padding: 20px;
+                text-align: justify;
+
+                img{
+                    float: right;
+                    width: 300px;
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        .mangaCol{
+            border-radius: 5px;
+            box-shadow: 4px 4px 4px 4px #024;
+            margin: 20px;
+            margin-bottom: 20px;
+            max-width: 50%;
+            border: #d82 solid 3px;
+
+            h3{
+                padding: 20px 20px 0px 20px;
+                color: #fff; 
+                display: inline-block;
+                -webkit-text-stroke: 0.8px #000;
+            }
+
+            hr{
+                border: #d82 solid 2px;
+                box-shadow: 0 4px 2px 0px #000;
+            }
+
+            .list-group{
+                border: #d82 solid 3px;
+                box-shadow: 4px 4px 4px 4px #024;
+
+                li{
+                    background-color: #037;
+                    color: #fff;
+                }
+            }
+
+            .imgCol{
+                border-radius: 5px;
+                box-shadow: 4px 4px 4px 4px #024;
+                margin: 20px;
+                margin-bottom: 20px;
+                max-width: 100%;
+                border: #d82 solid 3px;
+                margin-top: 10%;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        .animeCol{
+            border-radius: 5px;
+            box-shadow: 4px 4px 4px 4px #024;
+            margin: 20px;
+            margin-bottom: 20px;
+            min-width: 35%;
+            max-width: 90%;
+            border: #d82 solid 3px;
+
+            h3{
+                padding: 20px 20px 0px 20px;
+                color: #fff; 
+                display: inline-block;
+                -webkit-text-stroke: 0.8px #000;
+
+            }
+
+            hr{
+                border: #d82 solid 2px;
+                box-shadow: 0 4px 2px 0px #000;
+            }
+
+            .list-group{
+                border: #d82 solid 3px;
+                box-shadow: 4px 4px 4px 4px #024;
+
+                li{
+                    background-color: #037;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
